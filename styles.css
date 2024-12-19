@@ -61,7 +61,8 @@ p {
     text-transform: uppercase;
     transition: all .15s ease;
 }
-.buttonFill:hover{
+
+.buttonFill:hover {
     background-color: #F6F3EF;
 }
 
@@ -80,8 +81,9 @@ p {
     text-transform: uppercase;
     margin-top: 2rem;
 }
-.buttonOutline:hover{
-    color:#121212;
+
+.buttonOutline:hover {
+    color: #121212;
     background-color: #F6F3EF;
 }
 
@@ -110,12 +112,12 @@ p {
 }
 
 ::-webkit-scrollbar {
-    width: 10px; 
-    
+    width: 10px;
+
 }
 
 ::-webkit-scrollbar-track {
-    background:  rgba(255, 255, 255, 0.051); 
+    background: rgba(255, 255, 255, 0.051);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -430,8 +432,9 @@ header img {
     overflow-x: scroll;
     gap: 2rem;
 }
+
 .exhibits::-webkit-scrollbar {
-    display: none;    
+    display: none;
 }
 
 
@@ -457,7 +460,7 @@ header img {
 
 .arrows {
     width: 86%;
-    height:0;
+    height: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -467,12 +470,14 @@ header img {
 
     transform: translate(-50%, 50%);
 }
-    .newsArrows{
-        top: 43%;
-    }
-    .prevExhibt{
-        top: 45%;
-    }
+
+.newsArrows {
+    top: 43%;
+}
+
+.prevExhibt {
+    top: 45%;
+}
 
 /* Billede sektion */
 .image {
@@ -578,9 +583,91 @@ footer p {
 footer i {
     color: #121212;
 }
-.footerLogo img{
+
+.footerLogo img {
     width: 30vw;
 }
+
+/*nyhedsartikel */
+
+.article {
+    width: 65%;
+    margin: auto;
+}
+
+.articleContainer .image {
+    height: 60vh;
+}
+
+.articleTextAndImg {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 4rem;
+}
+
+.fatText {
+    font-weight: 900;
+}
+
+.article p {
+    padding: 0.5rem 0;
+}
+
+.article h2 {
+    margin-bottom: 1rem;
+    margin-top: 5rem;
+}
+
+
+.articleTextAndImg img {
+    max-width: 30%;
+    height: fit-content;
+}
+
+.articleTextAndImg div {
+    width: 80%;
+}
+
+#articleOne {
+    /* skal være et andet billede */
+    background: url('images/dronefoto_moesgaard_museum.jpeg') no-repeat center/cover fixed;
+    margin: 2rem 0;
+}
+
+.citation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+    margin: 1rem 0;
+}
+
+.citation .verticalLine {
+    background-color: #FF5964;
+    width: 3px;
+    margin-left: 1rem;
+}
+
+.cursive {
+    font-style: italic;
+}
+
+.highlight {
+    color: #FF5964;
+}
+
+.shareOnSocials {
+    margin: 1.5rem 0 4rem 0;
+}
+
+.shareOnSocials a {
+    margin: 0.5rem;
+    font-size: 2rem;
+}
+
+
+/* Media queries - responsive  */
 
 @media screen and (max-width:900px) {
     .pcHead {
@@ -641,7 +728,7 @@ footer i {
         margin: unset;
     }
 
-    
+
     .headerLogo {
         width: 50%;
     }
@@ -689,21 +776,26 @@ footer i {
     .exhibitContainer {
         padding: 7vh 5%;
     }
-    footer{
+
+    footer {
         display: block;
         height: auto;
     }
-    .footerSize{
+
+    .footerSize {
         width: 50%;
         display: block;
-        margin:auto;
+        margin: auto;
         text-align: center;
-        
+
     }
-    .footerTitle,.social{
+
+    .footerTitle,
+    .social {
         padding-top: 5rem;
     }
-    .footerLogo img{
+
+    .footerLogo img {
         padding-bottom: 5rem;
         width: 50vw;
     }
@@ -731,21 +823,25 @@ footer i {
 }
 
 @media screen and (max-width:450px) {
-    .social{
+    .social {
         width: 100%;
         height: 100px;
     }
-    .footerLogo img{
+
+    .footerLogo img {
         width: 60vw;
     }
-    .footerSize{
+
+    .footerSize {
         width: 60%;
     }
+
     .social a {
         width: 5rem !important;
         aspect-ratio: 1/1;
 
     }
+
     .fa-arrow-right {
         border: 2px solid #F6F3EF;
     }
