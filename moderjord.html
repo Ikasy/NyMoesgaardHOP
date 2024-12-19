@@ -1,0 +1,270 @@
+<!-- ****************************
+Denne side samt tilhørerende script og css er kodet af Julie i åben forum med Anne-Mette og Charlotte 
+********************************* -->
+
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/images/favicon.svg" type="image/x-icon">
+    <title>Moesgaard</title>
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/6978fc69bd.js" crossorigin="anonymous" defer></script>
+    <link rel="stylesheet" href="styles.css" defer>
+</head>
+
+<body>
+
+    <header>
+        <div class="pcHead">
+            <div class="headerSize">
+                <a href="index.html" class="headerLogo"><img src="images/Logo.png" alt="Moesgaard Museum logo"></a>
+
+            </div>
+            <div class="headerSize">
+                <nav>
+                    <a href="oplev.html">Oplev</a>
+                    <a href="#">Besøg</a>
+                    <a href="#">Køb</a>
+                </nav>
+            </div>
+
+            <div class="headerSize extraNav">
+                <p>Åben: 10-17</p>
+
+                <div>
+                    <a href="#"><i class="fa-solid fa-globe"></i></a>
+                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <a href="#"><i class="fa-solid fa-bars "></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="phoneHead">
+            <a href="index.html" class="headerLogo"><img src="images/Logo.png" alt="Moesgaard Museum logo"></a>
+            <a href="#" onclick="toggleBurger(event)"><i id="navIcon" class="fa-solid fa-bars "></i></a>
+        </div>
+
+
+        <div id="burgerMenu">
+            <div>
+                <a class="burgerLink" href="oplev.html">oplev</a>
+                <a class="burgerLink" href="">Besøg</a>
+                <a class="burgerLink" href="">køb</a>
+
+                <div class="horizontalLine"></div>
+                <a href="">Erhverv, møder og events</a>
+                <a href="">Forskning og undersøgelser</a>
+                <a href="">Rådgivning for bygherrer</a>
+                <a href="">Job og karriere</a>
+                <a href="">Moesgaards 10-årsjubilæum</a>
+            </div>
+            <div class="BurgerVerticalLine"></div>
+        </div>
+    </header>
+
+
+    <div class="hero trumpet">
+        <div>
+            <p class="overTitle">Særudstilling</p>
+            <h1>Moder Jord</h1>
+            <p class="underTitle specific">11. okt. 2024 - 10. aug. 2025</p>
+        </div>
+    </div>
+
+    <div class="CTAline">
+        <h3>Billetter og årskort</h3>
+        <a href="#" class="buttonFill">Køb her</a>
+    </div>
+
+    <div class="doubleText">
+        <h2>Intro</h2>
+        <div class="doubleTextText">
+            <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel rem quasi cumque a, inventore illum
+                    assumenda aspernatur. Rem neque nemo reiciendis, voluptatum mollitia fugit optio. Inventore quo quis
+                    tempore ipsam?
+                    Itaque atque illum laudantium error iure, minus eos officia qui adipisci, velit ratione. Deserunt
+                    dolore dolorum veritatis nostrum accusantium labore natus iste modi rerum deleniti, commodi fugit
+                    harum voluptates aliquam.</p>
+            </div>
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus dolorem dicta placeat, quis
+                    adipisci quasi culpa cumque aliquid, aperiam corporis tempora ipsa ducimus quo a provident quidem
+                    labore ipsum in.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="exhibitContainer">
+        <div class="arrows">
+            <svg width="20" height="64" viewBox="0 0 20 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M19.2658 2.7419C19.6625 2.01459 19.3944 1.10346 18.6671 0.706823C17.9398 0.310185 17.0287 0.578242 16.632 1.30554L0.320763 31.215C0.307848 31.2382 0.295561 31.2616 0.283909 31.2853C0.179188 31.4978 0.129404 31.7242 0.12962 31.9475C0.129404 32.1709 0.179186 32.3973 0.283907 32.6098C0.295549 32.6335 0.307827 32.6569 0.32073 32.68L16.632 62.5896C17.0287 63.3169 17.9398 63.5849 18.6671 63.1883C19.3944 62.7916 19.6625 61.8805 19.2658 61.1532L3.3384 31.9475L19.2658 2.7419Z"
+                    fill="#F6F3EF" />
+            </svg>
+
+            <svg width="20" height="64" viewBox="0 0 20 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M0.312291 2.7419C-0.0843467 2.01459 0.18371 1.10346 0.911013 0.706823C1.63832 0.310185 2.54945 0.578242 2.94609 1.30554L19.2574 31.215C19.2703 31.2382 19.2826 31.2616 19.2942 31.2853C19.3989 31.4978 19.4487 31.7242 19.4485 31.9475C19.4487 32.1709 19.3989 32.3973 19.2942 32.6098C19.2826 32.6335 19.2703 32.6569 19.2574 32.68L2.94609 62.5896C2.54945 63.3169 1.63832 63.5849 0.911013 63.1883C0.18371 62.7916 -0.0843467 61.8805 0.312291 61.1532L16.2397 31.9475L0.312291 2.7419Z"
+                    fill="#F6F3EF" />
+            </svg>
+        </div>
+        <h2>STORIES</h2>
+        <div class="exhibits">
+            <div class="exhibitCard">
+                <img src="images/ModerJordthumbnail/gravrøver.jpg" alt="Billede af en story om en gravrøver">
+                <p>En rigtig gravrøver-historie</p>
+            </div>
+            <div class="exhibitCard">
+                <img src="images/ModerJordthumbnail/moderjordkort.jpg" alt="billede af en story om Moder jord">
+                <p>Moder Jord kort fortalt</p>
+            </div>
+            <div class="exhibitCard">
+                <img src="images/ModerJordthumbnail/vejentilstonehenge.jpg" alt="billede af en story om Stonehenge">
+                <p>Vejen til Stonehenge</p>
+            </div>
+            <div class="exhibitCard">
+                <img src="images/ModerJordthumbnail/mysterietomstonehenge.jpg"
+                    alt="Billede af en story om en gåde til stonehenge">
+                <p>Kan vi opklare gåden om Stonehenge?</p>
+            </div>
+            <div class="exhibitCard">
+                <img src="images/ModerJordthumbnail/formeheleverden.jpg" alt="Billede af en story om hvad nu hvis">
+                <p>Hvad nu hvis vi kan forme <br /> hele verden?</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="CTAline">
+        <h3>Tilmeld nyhedsbrev</h3>
+        <div>
+            <input type="email" name="email" id="email" placeholder="Indtast E-mail" />
+            <a href="#" class="buttonFill">Tilmeld</a>
+        </div>
+    </div>
+
+    <div class="doubleText">
+        <h2>Intro</h2>
+        <div class="doubleTextText">
+            <div>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In voluptatum, consectetur expedita
+                    praesentium, reprehenderit incidunt dolor laudantium eveniet hic provident eius accusamus! Fugiat
+                    porro ea, nulla architecto ratione cupiditate eligendi.
+                    Aliquid atque sed inventore ut, accusantium reiciendis animi dolorem laborum corporis ipsam aut
+                    autem quisquam at molestias similique ab optio dolor sint qui minima harum? Quo ab saepe doloremque
+                    quibusdam.</p>
+            </div>
+            <div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla fugiat saepe adipisci? Similique,
+                    quod cumque possimus officia doloremque a, dolor sunt nihil ad exercitationem quae iste molestiae
+                    quo necessitatibus numquam.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="exhibitContainer">
+        <div class="arrows">
+            <svg width="20" height="64" viewBox="0 0 20 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M19.2658 2.7419C19.6625 2.01459 19.3944 1.10346 18.6671 0.706823C17.9398 0.310185 17.0287 0.578242 16.632 1.30554L0.320763 31.215C0.307848 31.2382 0.295561 31.2616 0.283909 31.2853C0.179188 31.4978 0.129404 31.7242 0.12962 31.9475C0.129404 32.1709 0.179186 32.3973 0.283907 32.6098C0.295549 32.6335 0.307827 32.6569 0.32073 32.68L16.632 62.5896C17.0287 63.3169 17.9398 63.5849 18.6671 63.1883C19.3944 62.7916 19.6625 61.8805 19.2658 61.1532L3.3384 31.9475L19.2658 2.7419Z"
+                    fill="#F6F3EF" />
+            </svg>
+
+            <svg width="20" height="64" viewBox="0 0 20 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M0.312291 2.7419C-0.0843467 2.01459 0.18371 1.10346 0.911013 0.706823C1.63832 0.310185 2.54945 0.578242 2.94609 1.30554L19.2574 31.215C19.2703 31.2382 19.2826 31.2616 19.2942 31.2853C19.3989 31.4978 19.4487 31.7242 19.4485 31.9475C19.4487 32.1709 19.3989 32.3973 19.2942 32.6098C19.2826 32.6335 19.2703 32.6569 19.2574 32.68L2.94609 62.5896C2.54945 63.3169 1.63832 63.5849 0.911013 63.1883C0.18371 62.7916 -0.0843467 61.8805 0.312291 61.1532L16.2397 31.9475L0.312291 2.7419Z"
+                    fill="#F6F3EF" />
+            </svg>
+        </div>
+        <h2>Digitale fortællinger</h2>
+        <p>Digitale fortællinger perfomer bedst i fuldskærm på computeren.</p>
+        <div class="exhibits">
+            <a href="stjerner.html" class="exhibitCard">
+                <img src="images/stjernebillede.png" alt="billede af digital fortælling om Stjerner">
+                <p>Stjernerne</p>
+            </a>
+            <div class="exhibitCard">
+                <img src="images/storyPlaceholder.svg" alt="Placeholder til digitale fortællinger">
+                <p>Fortællinger</p>
+            </div>
+            <div class="exhibitCard">
+                <img src="images/storyPlaceholder.svg" alt="Placeholder til digitale fortællinger">
+                <p>Fortællinger</p>
+            </div>
+            <div class="exhibitCard">
+                <img src="images/storyPlaceholder.svg" alt="Placeholder til digitale fortællinger">
+                <p>Fortællinger</p>
+            </div>
+            <div class="exhibitCard">
+                <img src="images/storyPlaceholder.svg" alt="Placeholder til digitale fortællinger">
+                <p>Fortællinger</p>
+            </div>
+            <div class="exhibitCard">
+                <img src="images/storyPlaceholder.svg" alt="Placeholder til digitale fortællinger">
+                <p>Fortællinger</p>
+            </div>
+            <div class="exhibitCard">
+                <img src="images/storyPlaceholder.svg" alt="Placeholder til digitale fortællinger">
+                <p>Fortællinger</p>
+            </div>
+            <div class="exhibitCard">
+                <img src="images/storyPlaceholder.svg" alt="Placeholder til digitale fortællinger">
+                <p>Fortællinger</p>
+            </div>
+        </div>
+
+        <a href="" class="moreInfo">Se alle fortællinger <i class="fa-solid fa-arrow-right"></i> </a>
+    </div>
+
+
+
+
+    <footer>
+        <div class="footerSize">
+            <p class="footerTitle">Moesgaard Museum</p>
+            <p>Moesgård Allé 15</p>
+            <p>8270 Højbjerg</p>
+            <p>Telefon 87 39 40 00</p>
+            <p>(telefontid man-fre 09-16)</p>
+            <p><a href="mailto:Info@moesgaardmuseum.dk">Info@moesgaardmuseum.dk</a></p>
+
+        </div>
+        <div class="footerSize">
+            <p class="footerTitle">GREEN ATTRACTION</p>
+            <p>Moesgaard Museum </p>
+            <p>er certificeret af </p>
+            <p>GREEN ATTRACTION</p>
+
+        </div>
+
+
+        <div class="footerSize">
+            <div class="social">
+                <a title="Følg os på Facebook" href="https://www.facebook.com/MoesgaardMuseum/" target="_blank"><i
+                        class="fa fa-facebook"></i></a>
+                <a title="Billeder fra Instagram" href="https://www.instagram.com/moesgaardmuseum/" target="_blank"><i
+                        class="fa fa-instagram"></i></a>
+                <a title="Youtube"
+                    href="https://www.youtube.com/channel/UCHDIb824Fpp2OxXD-uVK9hw/videos?view_as=subscriber"><i
+                        class="fa fa-youtube"></i></a>
+                <a title="Følg os på X (Twitter)" href="https://twitter.com/museummoesgaard?lang=da"><i
+                        class="fa fa-twitter"></i></a>
+                <a title="LinkedIn" href="https://dk.linkedin.com/company/moesgaardmuseum"><i
+                        class="fa fa-linkedin"></i></a>
+                <a title="Kontakt" href="mailto:info@moesgaardmuseum.dk"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+            <div class="footerLogo">
+                <a href="/">
+                    <img src="images/Logo.png" alt="moesgaard museum logo">
+                </a>
+            </div>
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>

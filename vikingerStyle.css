@@ -1,0 +1,219 @@
+:root {
+    --colour-white: #f6f3ef;
+    --colour-black: #1a1a1a;
+    --colour-red: #FF5964;
+    --Colour-sky: #121212;
+}
+
+h2 {
+    font-size: 2rem;
+    letter-spacing: calc(2rem * 0.07);
+    margin-bottom: 0.5rem ;
+
+}
+
+h3 {
+    font-size: 1.5rem;
+    letter-spacing: calc(1.25rem * 0.07);
+    margin-top: 1rem ;
+}
+
+.boxcontainer {
+    padding-top: 6vh;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: auto;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 1rem;
+    height: 100vh;
+}
+
+.box {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    width: 19.22%;
+    aspect-ratio: 1/1;
+    color: var(--colour-white);
+
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.5);
+    border-radius: .5rem;
+
+}
+.box:first-child{
+    filter: brightness(1);
+    background: url(images/Vikinger/dronningTove.webp);
+    background-position: center;
+    background-size: cover;
+}
+.box:nth-child(2){
+    background: url(images/Vikinger/bispReginbrand.webp);
+    background-position: center;
+    background-size: cover;
+}
+.box:nth-child(3){
+    background: url(images/Vikinger/erikFraRandlev.webp);
+    background-position: center;
+    background-size: cover;
+}
+.box:nth-child(4){
+    background: url(images/Vikinger/haraldHaarderaade.webp);
+    background-position: center;
+    background-size: cover;
+}
+.box:nth-child(5){
+    background: url(images/Vikinger/hikuinSnedker.webp);
+    background-position: center;
+    background-size: cover;
+}
+.box:nth-child(6){
+    background: url(images/Vikinger/lilleArne.webp);
+    background-position: center;
+    background-size: cover;
+}
+.box:nth-child(7){
+    background: url(images/Vikinger/randlevkvinden.webp);
+    background-position: center;
+    background-size: cover;
+}
+.box:nth-child(8){
+    background: url(images/Vikinger/arkaeologInfo.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+
+.box p{
+    font-weight: 700;
+    padding: 1rem;
+    background-color: #121212cc;
+    width: 100%;
+    text-align: center;
+    border-radius:0 0  .5rem .5rem;
+
+}
+
+.box:hover {
+    background-color: var(--colour-red);
+    border: none;
+    color: var(--colour-white);
+    transition: 0.3s;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    height: 100%;
+    padding: 20px;
+    background-color: var(--Colour-sky);
+}
+
+.controls {
+    position: absolute;
+    top: 2.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    z-index: 10;
+}
+
+.overlay-content {
+    margin-top: 60px;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-plads,
+.info-indhold {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-plads p,
+.info-indhold p {
+    text-align: justify;
+}
+
+.info-indhold img,
+.info-plads img {
+    height: auto;
+    width: 100%;
+    max-width: 200px;
+    margin: 1rem 0;
+}
+
+
+button {
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: var(--Colour-sky);
+    border: 3px var(--colour-white) solid;
+    color: var(--colour-white);
+    border-radius: 100px;
+    padding: .5rem 2.25rem;
+    margin-top: 1rem;
+
+    font-weight: 700;
+    font-size: 1.25rem;
+    letter-spacing: calc(1.25rem * 0.07);
+}
+
+button:hover {
+    background-color: var(--colour-red);
+    border: none;
+    color: var(--colour-white);
+}
+
+@media screen and (max-width: 1300px) {
+
+    .overlay,
+    .boxcontainer {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    .overlay,
+    .boxcontainer {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+    .overlay,
+    .boxcontainer {
+        width: 85%;
+        height: 100%;
+    }
+
+    .info-plads,
+    .info-indhold {
+        width: 100%;
+    }
+
+    .controls {
+        width: 90%;
+        margin-top: 5%;
+    }
+}

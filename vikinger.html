@@ -1,0 +1,319 @@
+<!-- ****************************
+Denne side samt tilhørerende script og css er kodet af Anne-Mette 
+********************************* -->
+
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vikinger</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/6978fc69bd.js" crossorigin="anonymous" defer></script>
+    <link rel="shortcut icon" href="/images/favicon.svg" type="image/x-icon">
+    <script src="script.js" defer></script>
+    <script src="vikingeScript.js" defer></script>
+    <link rel="stylesheet" href="vikingerStyle.css">
+</head>
+
+<body>
+    <header>
+        <div class="pcHead">
+            <div class="headerSize">
+                <a href="index.html" class="headerLogo"><img src="images/Logo.png" alt="Moesgaard Museum logo"></a>
+
+            </div>
+            <div class="headerSize">
+                <nav>
+                    <a href="oplev.html">Oplev</a>
+                    <a href="#">Besøg</a>
+                    <a href="#">Køb</a>
+                </nav>
+            </div>
+
+            <div class="headerSize extraNav">
+                <p>Åben: 10-17</p>
+
+                <div>
+                    <a href="#"><i class="fa-solid fa-globe"></i></a>
+                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <a href="#"><i class="fa-solid fa-bars "></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="phoneHead">
+            <a href="index.html" class="headerLogo"><img src="images/Logo.png" alt="Moesgaard Museum logo"></a>
+            <a href="#" onclick="toggleBurger(event)"><i id="navIcon" class="fa-solid fa-bars "></i></a>
+        </div>
+
+
+        <div id="burgerMenu">
+            <div>
+                <a class="burgerLink" href="oplev.html">oplev</a>
+                <a class="burgerLink" href="">Besøg</a>
+                <a class="burgerLink" href="">køb</a>
+
+                <div class="horizontalLine"></div>
+                <a href="">Erhverv, møder og events</a>
+                <a href="">Forskning og undersøgelser</a>
+                <a href="">Rådgivning for bygherrer</a>
+                <a href="">Job og karriere</a>
+                <a href="">Moesgaards 10-årsjubilæum</a>
+            </div>
+            <div class="BurgerVerticalLine"></div>
+        </div>
+    </header>
+
+    <!-- Forside -->
+    <div class="boxcontainer">
+        <div class="box tove" onclick="openOverlay('overlay1')">
+            <p>Dronning Tove</p>
+        </div>
+        <div class="box">
+            <p>Bisp Reginbrand</p>
+        </div>
+        <div class="box">
+            <p>Erik fra Randlev</p>
+        </div>
+        <div class="box">
+            <p>Harald Hårderåde</p>
+        </div>
+        <div class="box">
+            <p>Hikuin Snedker</p>
+        </div>
+        <div class="box">
+            <p>Lille Arne</p>
+        </div>
+        <div class="box">
+            <p>Randlevkvinden</p>
+        </div>
+        <div class="box">
+            <p>Arkæolog information</p>
+        </div>
+    </div>
+
+    <!-- Overlay 1 -->
+    <div id="overlay1" class="overlay">
+        <div class="overlay-content">
+            <div class="controls">
+                <button onclick="closeOverlay()">Luk</button>
+            </div>
+            <div class="info-indhold">
+                <img src="images/Vikinger/dronningTove.webp" alt="billede Dronning Tove">
+                <h2>Dronning Tove</h2>
+                <p>Som dronning Toves betroede hofdame står du ved hendes side, mens rygterne om Svend Tveskægs
+                    oprør mod kong Harald breder sig. Hvert råd du giver, vil forme Toves valg – og måske hele
+                    kongerigets skæbne.</p>
+                <button onclick="openOverlay('overlay2')">Videre</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Overlay 2 -->
+    <div id="overlay2" class="overlay">
+        <div class="overlay-content">
+            <div class="controls">
+                <button onclick="goBack()">Tilbage</button>
+                <button onclick="closeOverlay()">Luk</button>
+            </div>
+            <div class="info-plads">
+                <img src="images/Vikinger/dronningTove.webp" alt="billede Dronning Tove">
+                <p>Du er dronning Toves betroede hofdame. Som den eneste, hun kan tale frit med, har Tove i årevis
+                    stolet på dig som sin fortrolige rådgiver. <br><br>
+                    En aften beder hun dig møde hende i hendes private gemakker, hvor hun fortæller om rygterne om
+                    Svend Tveskægs oprør mod hans far, kong Harald Blåtand.</p>
+                <button onclick="openOverlay('overlay3')">Videre</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Overlay 3 -->
+    <div id="overlay3" class="overlay">
+        <div class="overlay-content">
+            <div class="controls">
+                <button onclick="goBack()">Tilbage</button>
+                <button onclick="closeOverlay()">Luk</button>
+            </div>
+            <div class="info-plads">
+                <img src="images/Vikinger/dronningTove.webp" alt="billede Dronning Tove">
+                <p>"Hofdame," siger Tove, "Svend er i færd med at samle styrker mod Harald, og ingen ved, hvad hans
+                    næste træk bliver. Jeg må handle, men ved ikke, hvilken vej jeg skal gå." <br><br>
+                    Du kan råde hende til enten at mødes med Svend i håb om at finde ro, eller til at opsøge vølven
+                    som måske kan hjælpe hende med visdom og magiske midler. </p>
+                <h3 class="valgspg">Hvad råder du Tove til at gøre?</h3>
+                <button onclick="openOverlay('overlay4')">Søg fred med Svend</button>
+                <button onclick="openOverlay('overlay5')">Søg hjælp ved vølven</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Overlay 4 -->
+    <div id="overlay4" class="overlay">
+        <div class="overlay-content">
+            <div class="controls">
+                <button onclick="goBack()">Tilbage</button>
+                <button onclick="closeOverlay()">Luk</button>
+            </div>
+            <div class="info-plads">
+                <!-- først eksposition og konsekvens af tidligere valg -->
+                <img src="images/Vikinger/dronningTove.webp" alt="billede Dronning Tove">
+                <p>
+                    Tove beslutter sig for at følge dit råd og rejser afsted for at møde Svend i hans lejr. Du
+                    følger hende og sørger for, at hun har det, hun behøver. Da hun taler med Svend, forklarer han,
+                    at han føler sig forrådt af sin far og længes efter at blive taget alvorligt. <br><br>
+                    "Jeg er min fars blod," siger Svend. "Hvorfor vil han ikke give mig den plads, jeg fortjener?"
+                </p>
+                <button onclick="openOverlay('overlay6')">Videre</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Overlay 5 -->
+    <div id="overlay5" class="overlay">
+        <div class="overlay-content">
+            <div class="controls">
+                <button onclick="goBack()">Tilbage</button>
+                <button onclick="closeOverlay()">Luk</button>
+            </div>
+            <div class="info-plads">
+                <!-- først eksposition og konsekvens af tidligere valg -->
+                <img src="images/Vikinger/dronningTove.webp" alt="billede Dronning Tove">
+                <p>
+                    Du følger Tove ud til skoven, hvor vølven bor, og sammen møder I den mystiske kvinde, som
+                    tilbyder Tove en magisk eliksir. Eliksiren vil ifølge vølven give Tove en unik styrke, som
+                    kan hjælpe hende med at bevare kontrollen over hoffet. Men vølven advarer også: <br><br>
+                    "Eliksiren vil give dig magt, men kræve sin pris – og du vil bære konsekvenserne på din egen
+                    krop."
+                </p>
+                <button onclick="openOverlay('overlay7')">Videre</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Overlay 6 -->
+    <div id="overlay6" class="overlay">
+        <div class="overlay-content">
+            <div class="controls">
+                <button onclick="goBack()">Tilbage</button>
+                <button onclick="closeOverlay()">Luk</button>
+            </div>
+            <div class="info-plads">
+                <img src="images/Vikinger/dronningTove.webp" alt="billede Dronning Tove">
+                <p>Du kan nu vælge at rådgive Tove til at støtte Svend og forsikre ham om, at hun vil hjælpe
+                    ham med at tage magten. Eller du kan rådgive Tove til at minde Svend om, at han kan vinde
+                    respekt ved at være loyal overfor sin far og førstefødt arving. </p>
+                <h3 class="valgspg">Hvad foreslår du, at Tove skal sige til Svend?</h3>
+                <button onclick="openOverlay('overlay8')">Støt Svends krav til tronen</button>
+                <button onclick="openOverlay('overlay9')">Appeller til Svends loyalitet</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Overlay 7 -->
+    <div id="overlay7" class="overlay">
+        <div class="overlay-content">
+            <div class="controls">
+                <button onclick="goBack()">Tilbage</button>
+                <button onclick="closeOverlay()">Luk</button>
+            </div>
+
+            <div class="info-plads">
+                <img src="images/Vikinger/dronningTove.webp" alt="billede Dronning Tove">
+                <p>Tove søger råd hos dig og du kan enten råde hende til at drikke eliksiren selv, eller til at lade
+                    Kongen drikke elikseren for at blive mere modstandsdygtig overfor Svends trusler. </p>
+                <h3 class="valgspg">Hvad foreslår du, at Tove skal gøre?</h3>
+                <button onclick="openOverlay('overlay10')">Give eliksiren til Harald</button>
+                <button onclick="openOverlay('overlay11')">Tove drikker selv eliksiren</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Overlay 8 -->
+    <div id="overlay8" class="overlay">
+        <div class="overlay-content">
+            <div class="controls">
+                <button onclick="goBack()">Tilbage</button>
+                <button onclick="closeOverlay()">Luk</button>
+            </div>
+            <div class="info-plads">
+                <img src="images/Vikinger/dronningTove.webp" alt="billede Dronning Tove">
+                <h2>Svends magt</h2>
+                <p>Efter dit råd støtter Tove Svend og hans krav på tronen. Svend overtager kongemagten, og Tove står nu
+                    ved hans side. Men med en ny konge kommer også nye allierede, og du mærker, hvordan Toves plads ved
+                    hoffet bliver usikker. Svends nye rådgivere ser hende som en trussel, og du forsøger at beskytte
+                    hende, men frygten for hofintriger vokser.
+                </p>
+                <button onclick="closeOverlay()">Slut</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Overlay 9 -->
+    <div id="overlay9" class="overlay">
+        <div class="overlay-content">
+            <div class="controls">
+                <button onclick="goBack()">Tilbage</button>
+                <button onclick="closeOverlay()">Luk</button>
+            </div>
+            <div class="info-plads">
+                <img src="images/Vikinger/dronningTove.webp" alt="billede Dronning Tove">
+                <h2>Forsoningen</h2>
+                <p>Takket være din kløgt og rådgivning indvilliger Tove i at appellere til Svends følelser, og samtalen
+                    bliver en succes. Svend går med til at vende tilbage til sin far og lægge oprøret til side, men han
+                    kræver anerkendelse som arving. Harald modtager ham med lettelse, og din indsats har bragt freden
+                    tilbage.
+                </p>
+                <button onclick="closeOverlay()">Slut</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Overlay 10 -->
+    <div id="overlay10" class="overlay">
+        <div class="overlay-content">
+            <div class="controls">
+                <button onclick="goBack()">Tilbage</button>
+                <button onclick="closeOverlay()">Luk</button>
+            </div>
+            <div class="info-plads">
+                <img src="images/Vikinger/dronningTove.webp" alt="billede Dronning Tove">
+                <h2>Haralds styrke</h2>
+                <p>Da Tove giver eliksiren til Harald, vokser hans styrke, men også hans ubønhørlighed. Med sine nye
+                    kræfter undertrykker han oprøret, men bliver kold og hård – også mod Tove. Hans karisma og magt er
+                    større end nogensinde, men prisen har været stor. Som hendes nærmeste indser du, at kongen ikke
+                    længere ser på Tove som før.
+                </p>
+                <button onclick="closeOverlay()">Slut</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Overlay 11 -->
+    <div id="overlay11" class="overlay">
+        <div class="overlay-content">
+            <div class="controls">
+                <button onclick="goBack()">Tilbage</button>
+                <button onclick="closeOverlay()">Luk</button>
+            </div>
+            <div class="info-plads">
+                <img src="images/Vikinger/dronningTove.webp" alt="billede Dronning Tove">
+                <h2>Toves magt</h2>
+                <p>Da Tove selv drikker eliksiren, bliver hun fyldt med en ny styrke og kan nu inspirere hoffet og vinde
+                    støtte blandt kongens rådgivere. Svends oprør standses, og Harald forbliver på tronen. Men eliksiren
+                    har svækket Toves helbred, og du må nu passe på hende mere end nogensinde, selvom hendes position er
+                    stærkere end før.
+                </p>
+                <button onclick="closeOverlay()">Slut</button>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
+
+</body>
+
+</html>

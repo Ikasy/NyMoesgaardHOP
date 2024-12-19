@@ -1,0 +1,766 @@
+@import url("https://use.typekit.net/ruh2wjz.css");
+
+/* Generelle regler */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "museo-sans", sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: clamp(10px, calc(9px + 0.390625vw), 16px);
+}
+
+body {
+    background-color: #1A1A1A;
+    color: #F6F3EF;
+}
+
+
+h1 {
+    font-weight: 900;
+    font-size: 6rem;
+    letter-spacing: calc(6rem * 0.07);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 3rem;
+    letter-spacing: calc(3rem * 0.07);
+    text-transform: uppercase;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 2rem;
+    letter-spacing: calc(2rem * 0.07);
+    text-transform: uppercase;
+}
+
+p {
+    font-weight: 500;
+    font-size: 1.25rem;
+    letter-spacing: calc(1.25rem * 0.03);
+}
+
+.buttonFill {
+    box-sizing: border-box;
+    background-color: #FF5964;
+    text-decoration: none;
+    color: #1A1A1A;
+    padding: .5rem 2.25rem;
+    border-radius: 100px;
+    display: block;
+    width: fit-content;
+    font-weight: 900;
+    font-size: 1.25rem;
+    letter-spacing: calc(1.25rem * 0.07);
+    text-transform: uppercase;
+    transition: all .15s ease;
+}
+.buttonFill:hover{
+    background-color: #F6F3EF;
+}
+
+.buttonOutline {
+    border: solid 3px #F6F3EF;
+    text-decoration: none;
+    color: #F6F3EF;
+    padding: .5rem 2.25rem;
+    transition: all .15s ease;
+    border-radius: 100px;
+    display: block;
+    width: fit-content;
+    font-weight: 900;
+    font-size: 1.25rem;
+    letter-spacing: calc(1.25rem * 0.07);
+    text-transform: uppercase;
+    margin-top: 2rem;
+}
+.buttonOutline:hover{
+    color:#121212;
+    background-color: #F6F3EF;
+}
+
+.fa-arrow-right {
+    border: 3px solid #F6F3EF;
+    border-radius: 100px;
+    aspect-ratio: 1/1;
+    width: 2rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1vw;
+}
+
+.moreInfo {
+    text-align: end;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 1.25rem;
+    letter-spacing: calc(1.25rem * 0.03);
+    display: block;
+}
+
+.Info {
+    width: 60%;
+}
+
+::-webkit-scrollbar {
+    width: 10px; 
+    
+}
+
+::-webkit-scrollbar-track {
+    background:  rgba(255, 255, 255, 0.051); 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #F6F3EF;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #F6F3EF;
+}
+
+
+/* header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 6vh;
+    padding: 0 1vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 1.25rem;
+    letter-spacing: calc(1.25rem * 0.3);
+    text-transform: uppercase;
+    z-index: 100;
+    background-color: #121212cc;
+}
+
+.headerSize {
+    width: 33.33333vw;
+    display: flex;
+    align-items: center;
+}
+
+i,
+a {
+    color: #F6F3EF;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    margin: auto;
+}
+
+header img {
+    width: 100%;
+}
+
+.extraNav {
+    justify-content: right;
+}
+
+.extraNav p {
+    margin-right: 5vw;
+}
+
+.headerLogo {
+    width: 70%;
+    height: fit-content;
+}
+
+.phoneHead {
+    display: none;
+}
+
+.pcHead {
+    display: flex;
+}
+
+#burgerMenu {
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    transform: translateY(100%);
+    width: 100vw;
+    display: none;
+    justify-content: right;
+    padding: 2% 4%;
+    background-color: #1A1A1A;
+}
+
+#burgerMenu a {
+    display: block;
+    text-align: right;
+    margin: 1rem 0;
+    letter-spacing: calc(1.25rem * 0.1);
+
+}
+
+.burgerLink {
+    font-weight: 700;
+    font-size: 2rem;
+    letter-spacing: calc(2rem * 0.07);
+    text-transform: uppercase;
+}
+
+.BurgerVerticalLine {
+    width: 5px;
+    margin-left: 1rem;
+    background-color: #FF5964;
+    border-radius: 100px;
+}
+
+.horizontalLine {
+    width: 100%;
+    height: 3px;
+    background-color: #F6F3EF;
+    border-radius: 100px;
+}
+
+/* hero */
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    color: #F6F3EF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    background: url('images/ModerJordHero.png') no-repeat center/cover;
+    transition: all 1s ease;
+}
+
+.trumpet {
+    justify-content: left;
+    align-items: end;
+    padding: 0 10% 5% 10%;
+    color: #F6F3EF;
+}
+
+#heroDots {
+    position: absolute;
+    left: 50%;
+    bottom: 2rem;
+
+    display: flex;
+    gap: 1rem;
+
+    transform: translateX(-50%);
+
+}
+
+.dot {
+    width: 1rem;
+    aspect-ratio: 1/1;
+    background-color: #F6F3EF;
+    border-radius: 100px;
+    border: #F6F3EF 3px solid;
+    box-sizing: unset;
+    transition: background-image 1s ease;
+    transition: color 1s ease;
+}
+
+#experience {
+    background: url('images/muslingpige.webp') no-repeat center/cover;
+    color: #F6F3EF;
+}
+
+#ironage {
+    background: url('images/onkelgrauballe.jpg') no-repeat center/cover;
+}
+
+#viking {
+    background: url('images/vikingetiden.jpg') no-repeat center/cover;
+}
+
+.underTitle {
+    font-weight: 900;
+    font-size: 1.25rem;
+    letter-spacing: calc(1.25rem * 0.07);
+    text-transform: uppercase;
+    width: fit-content;
+    margin: 0 auto 2rem auto;
+}
+
+.specific {
+    margin: 0 0 2rem auto;
+
+}
+
+.overTitle {
+    font-weight: 900;
+    font-size: 1.25rem;
+    letter-spacing: calc(1.25rem * 0.30);
+    text-transform: uppercase;
+    width: fit-content;
+}
+
+.hero .buttonFill {
+    margin: auto;
+}
+
+/* CTA Bjælke */
+.CTAline {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+    height: 4.5rem;
+    background-color: #121212;
+    position: relative;
+
+}
+
+.CTAline div {
+    display: flex;
+    background-color: #fff;
+    border-radius: 100px;
+    padding: 0.2rem;
+}
+
+.CTAline div input {
+    width: 20vw;
+    padding-left: 1rem;
+    border: none;
+    border-radius: 100px;
+}
+
+.newsletterPopup {
+    transform: translateY(100%);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #121212;
+    text-align: center;
+    border-radius: unset;
+}
+
+.newsletterPopup input {
+    border: none;
+    border-radius: 100px;
+    padding: 0.2rem;
+    padding-left: 1rem;
+}
+
+
+/* Halv billede halv tekst */
+.halfImgHalfText {
+    display: flex;
+    height: 75vh;
+}
+
+.halfImgHalfText img {
+    width: 50%;
+    object-fit: cover;
+}
+
+.halfText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    padding: 0 10vw;
+}
+
+
+/* Åbningstider */
+
+.halfTextOpen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+}
+
+.halfTextOpen .content {
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    margin: 5vh 0;
+}
+
+.halfTextOpen .verticalLine {
+    width: 3px;
+    height: 100%;
+    border-radius: 100px;
+    background-color: #F6F3EF;
+}
+
+.halfTextOpen .dates p {
+    margin: 1.5vh 0;
+
+}
+
+
+/* Udstillinger */
+.exhibitContainer {
+    position: relative;
+
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.051);
+    padding: 7vh 10%;
+}
+
+.exhibits {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0 3rem 0;
+    overflow-x: scroll;
+    gap: 2rem;
+}
+.exhibits::-webkit-scrollbar {
+    display: none;    
+}
+
+
+.exhibitCard p {
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.exhibitCard:last-child {
+    margin-right: 0;
+}
+
+.exhibitCard img {
+    width: 16rem;
+    aspect-ratio: 1/1.5;
+    border-radius: .5rem;
+    object-fit: cover;
+}
+
+.exhibitSubTitle {
+    font-weight: 500 !important;
+}
+
+.arrows {
+    width: 86%;
+    height:0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, 50%);
+}
+    .newsArrows{
+        top: 43%;
+    }
+    .prevExhibt{
+        top: 45%;
+    }
+
+/* Billede sektion */
+.image {
+    width: 100%;
+    height: 100vh;
+    color: #F6F3EF;
+    display: flex;
+    align-items: center;
+    padding: 0 10vw;
+}
+
+.image div {
+    width: 35%;
+}
+
+#moesgaard {
+    background: url('images/dronefoto_moesgaard_museum.jpeg') no-repeat center/cover fixed;
+}
+
+#tour {
+    background: url('images/rundvisning.webp') no-repeat top/cover fixed;
+}
+
+
+#tour div {
+    width: 35%;
+    margin-left: auto
+}
+
+/* 2 spaltet tekst */
+.doubleText {
+    margin: 5rem 10%;
+}
+
+.doubleTextText {
+    display: flex;
+    width: 100%;
+    gap: 3rem;
+}
+
+.doubleTextText div {
+    margin: 1rem 0;
+    width: 100%;
+}
+
+.background {
+    background-color: #1a1a1a;
+    padding: 0.5rem 0;
+}
+
+.GrauballeBackground {
+    background-image: url(/images/grauballe/GBBG.png);
+}
+
+
+/* footer */
+
+
+footer {
+    background-color: #121212;
+    display: flex;
+    height: 50vh;
+    align-items: center;
+    padding: 0 10%;
+    justify-content: space-between;
+}
+
+.footerSize {
+    height: 30%;
+
+}
+
+.footerTitle {
+    font-weight: 900;
+}
+
+footer p {
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.social,
+.footerLogo {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.social a {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #F6F3EF;
+    border-radius: 100px;
+    font-size: 1.5rem;
+    width: 2.5rem;
+    aspect-ratio: 1/1;
+}
+
+footer i {
+    color: #121212;
+}
+.footerLogo img{
+    width: 30vw;
+}
+
+@media screen and (max-width:900px) {
+    .pcHead {
+        display: none;
+    }
+
+    .phoneHead {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 95%;
+        margin: auto;
+    }
+
+
+    h1 {
+        font-size: 5rem;
+        letter-spacing: calc(5rem * 0.07);
+    }
+
+    .trumpet {
+        padding: 0 5% 5% 5%;
+    }
+
+    .doubleTextText {
+        display: block;
+    }
+
+    p {
+        font-weight: 500;
+        font-size: 1.25rem;
+        letter-spacing: calc(1.25rem * 0.03);
+    }
+
+    .buttonFill {
+        font-size: 1rem;
+        letter-spacing: calc(1rem * 0.07);
+    }
+
+    .buttonOutline {
+        font-size: 1rem;
+        letter-spacing: calc(1rem * 0.07);
+    }
+
+
+
+    .dot {
+        width: 0.75rem;
+        border: #F6F3EF 2px solid;
+    }
+
+    .image div {
+        width: 70%;
+    }
+
+    #tour div {
+        width: 70%;
+        margin: unset;
+    }
+
+    
+    .headerLogo {
+        width: 50%;
+    }
+
+    /* Halv billede halv tekst */
+    .halfImgHalfText {
+        display: block;
+        height: 100vh;
+    }
+
+    .halfImgHalfText img {
+        width: 100%;
+        height: 50%;
+    }
+
+    .halfText {
+        width: 100%;
+        height: 50%;
+    }
+
+    .halfTextOpen {
+        align-items: center;
+        margin: auto;
+        width: 90%;
+        height: 60%;
+    }
+
+    .halfTextOpenImg {
+        height: 40% !important;
+    }
+
+    .verticalLine {
+        height: 100%;
+    }
+
+    .moreInfo {
+        margin: unset;
+        margin-left: auto;
+    }
+
+    .CTAline {
+        padding: 0 5%;
+    }
+
+    .exhibitContainer {
+        padding: 7vh 5%;
+    }
+    footer{
+        display: block;
+        height: auto;
+    }
+    .footerSize{
+        width: 50%;
+        display: block;
+        margin:auto;
+        text-align: center;
+        
+    }
+    .footerTitle,.social{
+        padding-top: 5rem;
+    }
+    .footerLogo img{
+        padding-bottom: 5rem;
+        width: 50vw;
+    }
+}
+
+@media screen and (max-width:600px) {
+    h3 {
+        font-size: 1.5rem;
+        letter-spacing: calc(1.5rem * 0.07);
+    }
+
+    .CTAline div {
+        background-color: unset;
+    }
+
+    .CTAline div input {
+        display: none;
+    }
+
+    .trumpet {
+        padding: 0 2.5% 5% 2.55%;
+    }
+
+
+}
+
+@media screen and (max-width:450px) {
+    .social{
+        width: 100%;
+        height: 100px;
+    }
+    .footerLogo img{
+        width: 60vw;
+    }
+    .footerSize{
+        width: 60%;
+    }
+    .social a {
+        width: 5rem !important;
+        aspect-ratio: 1/1;
+
+    }
+    .fa-arrow-right {
+        border: 2px solid #F6F3EF;
+    }
+
+    h1 {
+        font-size: 4rem;
+        letter-spacing: calc(4rem * 0.07);
+    }
+
+    .image div {
+        width: 100%;
+    }
+
+    #tour div {
+        width: 100%;
+        margin: unset;
+    }
+}

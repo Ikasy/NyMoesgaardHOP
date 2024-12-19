@@ -1,0 +1,85 @@
+#container {
+  background-image: url(/images/grauballe/GBBG.png);
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  height: 100vh;
+  perspective: 1000px;
+  position: relative;
+}
+
+.image-wrapper {
+  position: relative;
+  transform-style: preserve-3d;
+  margin: auto ;
+  transform: scale(0.8);
+  transition: margin 0.5 ease;
+}
+.image-3d {
+  filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.5));
+  transition: transform 0.1s;
+}
+/* Hotspot styles */
+.hotspot {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  background-image: url(images/grauballe/button.svg);
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transition: opacity 0.3s ease;
+}
+
+#hotspot1{
+  top: 25%; left: 20%
+}
+#hotspot2{
+  top: 8%; left: 50%;
+}
+#hotspot3{
+  top: 46%; right: 17%;
+}
+#hotspot4{
+  top: 49%; left: 50%;
+}
+
+.hotspot-content{
+  width: 45vw;
+  height: 85vh;
+  color: white;
+  overflow-y: scroll;
+  position: absolute;
+    top: 10%;
+    left:5%;
+}
+.hotspot-content::-webkit-scrollbar{
+  display: none;
+}
+.hotspot-content img{
+  width: 100%;
+}
+.line{
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  margin: 0.8rem 0 1rem 0;
+}
+
+h2{
+  font-size: 2.5rem;
+  letter-spacing: calc(2.5rem * 0.07);
+  text-align: left;
+  font-weight: 900;
+}
+.hotspot-content p{
+  margin-bottom: 1rem;
+}
+.doubleImg{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.doubleImg img{
+  width: 48%;
+  object-fit: cover;
+}
