@@ -666,6 +666,67 @@ footer i {
     font-size: 2rem;
 }
 
+/* Nyhedsgalleri */
+.gallery {
+    height: 50vh;
+    background: url('images/dronefoto_moesgaard_museum.jpeg') no-repeat center/cover;
+    transition: all 1s ease;
+}
+
+/* Søgefelt */
+#search {
+    width: 60%;
+    margin: 2rem auto 4rem auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 100px;
+}
+
+/* Galleriet */
+.newsGallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /*4 kolonner */
+    gap: 25px;
+
+}
+
+.galleryContainer {
+    width: 80%;
+    margin: 20px auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    border-radius: 10px;
+    transition: transform 0.2s;
+    width: 100%;
+    height: 25rem;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    /* Lidt hævning ved hover */
+}
+
+.tagkonstruktion {
+    background: url('images/tagkonstruktion_boersen_moesgaard.jpg') no-repeat center/cover;
+}
+
+.moebelkunst {
+    background: url('images/egyptisk_moebelkunst_37.webp') no-repeat center/cover;
+}
+
+.krigerkvinde {
+    background: url('images/krigerkvinde_hedega-rd.webp') no-repeat center/cover;
+}
+
+.trine {
+    background: url('images/trine_kellberg9.jpg') no-repeat center/cover;
+}
+
 
 /* Media queries - responsive  */
 

@@ -46,7 +46,7 @@ function updateHero() {
     setTimeout(updateHero, 5000);
 }
 // Initierende kald til hero
-if (heroTitle != null){
+if (heroTitle != null) {
     updateHero();
 }
 
@@ -143,3 +143,19 @@ document.addEventListener("DOMContentLoaded", () => {
         updateArrowVisibility();
     });
 });
+
+
+// Funktion til at filtrere billeder
+function filterImages() {
+    const searchInput = document.getElementById('search').value.toLowerCase();
+    const cards = document.querySelectorAll('.card');
+
+    cards.forEach(card => {
+        const name = card.getAttribute('data-name').toLowerCase();
+        if (name.includes(searchInput)) {
+            card.style.display = 'block';
+        } else {
+            card.style.display = 'none';
+        }
+    });
+}

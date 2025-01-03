@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moesgaard</title>
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/6978fc69bd.js" crossorigin="anonymous" defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="/images/favicon.svg" type="image/x-icon">
+</head>
+
+<body>
+
+    <header>
+        <div class="pcHead">
+            <div class="headerSize">
+                <a href="index.html" class="headerLogo"><img src="images/Logo.png" alt="Moesgaard Museum logo"></a>
+
+            </div>
+            <div class="headerSize">
+                <nav>
+                    <a href="oplev.html">Oplev</a>
+                    <a href="#">Besøg</a>
+                    <a href="#">Køb</a>
+                </nav>
+            </div>
+
+            <div class="headerSize extraNav">
+                <p>Åben: 10-17</p>
+
+                <div>
+                    <a href="#"><i class="fa-solid fa-globe"></i></a>
+                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <a href="#"><i class="fa-solid fa-bars "></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="phoneHead">
+            <a href="index.html" class="headerLogo"><img src="images/Logo.png" alt="Moesgaard Museum logo"></a>
+            <a href="#" onclick="toggleBurger(event)"><i id="navIcon" class="fa-solid fa-bars "></i></a>
+        </div>
+
+
+        <div id="burgerMenu">
+            <div>
+                <a class="burgerLink" href="oplev.html">oplev</a>
+                <a class="burgerLink" href="">Besøg</a>
+                <a class="burgerLink" href="">køb</a>
+
+                <div class="horizontalLine"></div>
+                <a href="">Erhverv, møder og events</a>
+                <a href="">Forskning og undersøgelser</a>
+                <a href="">Rådgivning for bygherrer</a>
+                <a href="">Job og karriere</a>
+                <a href="">Moesgaards 10-årsjubilæum</a>
+            </div>
+            <div class="BurgerVerticalLine"></div>
+        </div>
+    </header>
+
+    <div class="hero gallery trumpet">
+        <div>
+            <!-- Der skal nok stå noget andet i trumpet  -->
+            <p class="overTitle">Velkommen til</p>
+            <h1>Nyheder</h1>
+        </div>
+    </div>
+
+    <div class="galleryContainer">
+        <!-- Søgefelt -->
+        <input type="text" id="search" placeholder="Søg efter nyheder..." onkeyup="filterImages()">
+
+        <!-- Galleriet -->
+        <div class="newsGallery" id="newsGallery">
+            <!-- Kortene/billederne -->
+            <div class="card tagkonstruktion" data-name="Billede 1 tagkonstruktion boersen børsen">
+            </div>
+            <div class="card moebelkunst" data-name="Billede 2 egyptisk moebelkunst møbelkusnt egypten ægypten">
+            </div>
+            <div class="card krigerkvinde" data-name="Billede 3 krigerkvinde hedegaard hedegård">
+            </div>
+            <div class="card trine" data-name="Billede 4 trine kellberg">
+            </div>
+            <!-- Flere kort tilføjes -->
+            <div class="card" data-name="Billede 5">
+                <img src="https://via.placeholder.com/200" alt="Billede 5">
+                <p>Billede 5</p>
+            </div>
+            <div class="card" data-name="Billede 6">
+                <img src="https://via.placeholder.com/200" alt="Billede 6">
+                <p>Billede 6</p>
+            </div>
+            <div class="card" data-name="Billede 7">
+                <img src="https://via.placeholder.com/200" alt="Billede 7">
+                <p>Billede 7</p>
+            </div>
+            <div class="card" data-name="Billede 8">
+                <img src="https://via.placeholder.com/200" alt="Billede 8">
+                <p>Billede 8</p>
+            </div>
+            <div class="card" data-name="Billede 9">
+                <img src="https://via.placeholder.com/200" alt="Billede 1">
+                <p>Billede 9</p>
+            </div>
+            <div class="card" data-name="Billede 10">
+                <img src="https://via.placeholder.com/200" alt="Billede 2">
+                <p>Billede 10</p>
+            </div>
+            <div class="card" data-name="Billede 11">
+                <img src="https://via.placeholder.com/200" alt="Billede 3">
+                <p>Billede 11</p>
+            </div>
+            <div class="card" data-name="Billede 12">
+                <img src="https://via.placeholder.com/200" alt="Billede 4">
+                <p>Billede 12</p>
+            </div>
+            <!-- Flere kort tilføjes -->
+            <div class="card" data-name="Billede 13">
+                <img src="https://via.placeholder.com/200" alt="Billede 5">
+                <p>Billede 13</p>
+            </div>
+            <div class="card" data-name="Billede 14">
+                <img src="https://via.placeholder.com/200" alt="Billede 6">
+                <p>Billede 14</p>
+            </div>
+            <div class="card" data-name="Billede 15">
+                <img src="https://via.placeholder.com/200" alt="Billede 7">
+                <p>Billede 15</p>
+            </div>
+            <div class="card" data-name="Billede 16">
+                <img src="https://via.placeholder.com/200" alt="Billede 8">
+                <p>Billede 16</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer>
+        <div class="footerSize">
+            <p class="footerTitle">Moesgaard Museum</p>
+            <p>Moesgård Allé 15</p>
+            <p>8270 Højbjerg</p>
+            <p>Telefon 87 39 40 00</p>
+            <p>(telefontid man-fre 09-16)</p>
+            <p><a href="mailto:Info@moesgaardmuseum.dk">Info@moesgaardmuseum.dk</a></p>
+
+        </div>
+        <div class="footerSize">
+            <p class="footerTitle">GREEN ATTRACTION</p>
+            <p>Moesgaard Museum </p>
+            <p>er certificeret af </p>
+            <p>GREEN ATTRACTION</p>
+
+        </div>
+
+
+        <div class="footerSize">
+            <div class="social">
+                <a title="Følg os på Facebook" href="https://www.facebook.com/MoesgaardMuseum/" target="_blank"><i
+                        class="fa fa-facebook"></i></a>
+                <a title="Billeder fra Instagram" href="https://www.instagram.com/moesgaardmuseum/" target="_blank"><i
+                        class="fa fa-instagram"></i></a>
+                <a title="Youtube"
+                    href="https://www.youtube.com/channel/UCHDIb824Fpp2OxXD-uVK9hw/videos?view_as=subscriber"><i
+                        class="fa fa-youtube"></i></a>
+                <a title="Følg os på X (Twitter)" href="https://twitter.com/museummoesgaard?lang=da"><i
+                        class="fa fa-twitter"></i></a>
+                <a title="LinkedIn" href="https://dk.linkedin.com/company/moesgaardmuseum"><i
+                        class="fa fa-linkedin"></i></a>
+                <a title="Kontakt" href="mailto:info@moesgaardmuseum.dk"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+            <div class="footerLogo">
+                <a href="/">
+                    <img src="images/Logo.png" alt="Moesgaard Museum logo">
+                </a>
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>
