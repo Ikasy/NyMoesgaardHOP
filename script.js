@@ -35,9 +35,9 @@ function updateHero() {
     heroUnderTitle.innerHTML = heroUnderTitles[index];
     hero.style.background = heroBackgrounds[index];
     dots.forEach(dot => {
-        dot.style.background = "#F6F3EF";
+        dot.style.background = "unset";
     });
-    dots[index].style.background = "unset"
+    dots[index].style.background = "#F6F3EF"
     heroButton.href = heroLinks[index];
 
     // tager index og plusser med 1 indtil den når længden af arrays og nulstiller
