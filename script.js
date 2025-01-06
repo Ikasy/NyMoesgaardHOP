@@ -160,22 +160,3 @@ function filterImages() {
     });
 }
 
-// til galleri - nogle kort skal have dobbelt bredde, 
-// her er et stykke JS som kigger på hvor mange kort der er i rækken
-//  og giver et tilfældigt kort i rækken dobbeltbredde. Med hjælp fra chatgpt!!! //
-document.addEventListener("DOMContentLoaded", () => {
-    const cards = document.querySelectorAll('.card');
-    const cardsPerRow = 4; // Der skal være 4 billeder per række
-
-    // Gå gennem alle billeder
-    for (let i = 0; i < cards.length; i += cardsPerRow) {
-        const rowCards = Array.from(cards).slice(i, i + cardsPerRow); // Få de næste 4 billeder
-
-        // Giv et tilfældigt billede i rækken dobbelt bredde
-        if (rowCards.length > 0) {
-            const randomIndex = Math.floor(Math.random() * rowCards.length);
-            const cardToDouble = rowCards[randomIndex];
-            cardToDouble.classList.add('double-width');
-        }
-    }
-});

@@ -715,7 +715,7 @@ footer i {
     border-radius: 10px;
     transition: transform 0.2s;
     width: 100%;
-    height: 25rem;
+    height: 22rem;
     overflow: hidden;
     /* Sikrer, at overlayet ikke rækker ud over kortet */
 }
@@ -733,9 +733,8 @@ footer i {
     padding: 2rem;
 }
 
-/* nogle kort skal være dobbelt så bredde så her er en klasse til det. resten er i JS
-med hjælp fra chatgpt :D */
-.card.double-width {
+/* nogle kort skal være dobbelt*/
+.double-width {
     grid-column: span 2;
     /* Får kortet til at fylde dobbelt bredde */
 }
