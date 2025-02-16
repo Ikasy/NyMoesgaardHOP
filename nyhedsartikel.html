@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moesgaard</title>
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/6978fc69bd.js" crossorigin="anonymous" defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="/images/favicon.svg" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div class="pcHead">
+            <div class="headerSize">
+                <a href="index.html" class="headerLogo"><img src="images/Logo.png" alt="Moesgaard Museum logo"></a>
+
+            </div>
+            <div class="headerSize">
+                <nav>
+                    <a href="oplev.html">Oplev</a>
+                    <a href="#">Besøg</a>
+                    <a href="#">Køb</a>
+                </nav>
+            </div>
+
+            <div class="headerSize extraNav">
+                <p>Åben: 10-17</p>
+
+                <div>
+                    <a href="#"><i class="fa-solid fa-globe"></i></a>
+                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <a href="#"><i class="fa-solid fa-bars "></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="phoneHead">
+            <a href="index.html" class="headerLogo"><img src="images/Logo.png" alt="Moesgaard Museum logo"></a>
+            <a href="#" onclick="toggleBurger(event)"><i id="navIcon" class="fa-solid fa-bars "></i></a>
+        </div>
+
+
+        <div id="burgerMenu">
+            <div>
+                <a class="burgerLink" href="oplev.html">oplev</a>
+                <a class="burgerLink" href="">Besøg</a>
+                <a class="burgerLink" href="">køb</a>
+
+                <div class="horizontalLine"></div>
+                <a href="">Erhverv, møder og events</a>
+                <a href="">Forskning og undersøgelser</a>
+                <a href="">Rådgivning for bygherrer</a>
+                <a href="">Job og karriere</a>
+                <a href="">Moesgaards 10-årsjubilæum</a>
+            </div>
+            <div class="BurgerVerticalLine"></div>
+        </div>
+    </header>
+
+    <div class="hero trumpet articleImg">
+        <div>
+            <!-- Der skal nok stå noget andet i trumpet  -->
+            <h1>Artikelside</h1>
+            <p class="underTitle specific articleName">Moesgaard ansigter</p>
+        </div>
+    </div>
+
+    <!-- artikel indholdet -->
+    <div class="articleContainer">
+        <div class="article">
+            <h2>Nyhedsartikel</h2>
+            <div class="articleTextAndImg">
+                <div>
+                    <p class="fatText">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, odit, possimus
+                        illum, aspernatur magni laborum nulla excepturi totam qui consectetur quasi? Sunt, quidem
+                        corporis
+                        reiciendis praesentium
+                        distinctio dicta voluptate magnam..</p>
+                    <p>dato evt i dag kl. 14:40 <br> forfatter navn</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit rerum est inventore quis. Modi
+                        quasi
+                        odit, eum nulla, quisquam, provident distinctio a fuga voluptatem non assumenda incidunt ipsa
+                        delectus
+                        accusantium. Perspiciatis, at eaque! Non sequi quas adipisci deserunt magnam in ullam labore
+                        nulla
+                        dignissimos.
+                        Dolores, ipsa nesciunt aperiam nemo provident obcaecati iste? A saepe corrupti cumque voluptas
+                        quos
+                        quod
+                        explicabo. Repellendus quaerat minus id officia incidunt ratione tenetur consequuntur cupiditate
+                        quasi!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis libero expedita placeat sunt
+                        corrupti
+                        provident, saepe repudiandae corporis nostrum ipsum delectus architecto a esse facere accusamus
+                        beatae nam iure blanditiis. Odio culpa alias repudiandae ipsa magnam, cum saepe non dolore
+                        assumenda
+                    </p>
+                </div>
+                <img src="images/trine_kellberg9.jpg" alt="billede af Trine Kellberg">
+            </div>
+            <div class="citation">
+                <div class="verticalLine"></div>
+                <div>
+                    <p class="cursive">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam sit nisi
+                        repudiandae
+                        corporis delectus eaque sed aliquid, <span class="highlight">pariatur autem quia,</span>
+                        voluptatem, libero ea et
+                        cupiditate nobis
+                        ut recusandae doloremque vel.</p>
+                    <p><span class="fatText">Forfatter navn</span><br>relevant titel</p>
+                </div>
+
+            </div>
+
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea quis quos dolore quo harum, suscipit tempora
+                dolorum. <span class="highlight">Tempora repellendus</span> laudantium soluta impedit necessitatibus,
+                fugiat
+                officiis
+                doloribus nam eaque accusamus magnam.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt id consectetur dolor ipsum? Ex iure
+                illum
+                maxime blanditiis ipsa iste veniam quibusdam accusantium voluptas suscipit culpa, accusamus doloribus
+                laboriosam? Hic!
+                Accusamus exercitationem atque porro itaque minus repellat saepe enim adipisci, consequatur accusantium
+                veniam eius debitis dolorem, illum et amet totam impedit dicta veritatis, aut sunt eveniet? Aliquam
+                debitis
+                a soluta!
+                Ipsum asperiores dolor, rem accusantium, reprehenderit maxime tempora aspernatur dicta neque iure odio
+                quos
+                tempore architecto distinctio optio. Eum repellat unde dignissimos facere ullam. Saepe alias distinctio
+                tempora excepturi nobis?</p>
+        </div>
+        <div class="image" id="articleOne">
+        </div>
+
+        <div class="article">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus velit modi, consequatur nam molestias
+                delectus minus? Vel, facilis quod explicabo commodi quos expedita error possimus, quisquam corporis,
+                dignissimos adipisci earum!
+                Voluptas voluptates accusantium rerum perspiciatis delectus perferendis illum aspernatur odio cumque.
+                Quae, ullam libero fugiat minus error velit vero fugit sint, inventore modi cupiditate consectetur
+                officiis veniam possimus minima eveniet!</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum quas fugiat quasi et voluptatem eligendi
+                eaque perferendis autem quis ut molestiae exercitationem illum possimus ullam nostrum doloremque
+                laboriosam,
+                itaque eveniet.
+            </p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla saepe suscipit accusamus officia
+                provident
+                asperiores ducimus a deserunt laborum veritatis eos corporis mollitia fuga, explicabo necessitatibus
+                iste
+                autem ut ipsam.
+                Eos, fugiat exercitationem impedit provident vitae ipsum fugit asperiores maiores adipisci ullam
+                recusandae
+                consequuntur. Molestiae officia dignissimos sint id cum, fuga alias assumenda eveniet atque reiciendis,
+                libero velit commodi ipsam.</p>
+            <div class="shareOnSocials">
+                <p class="fatText">Del artiklen:</p>
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footerSize">
+            <p class="footerTitle">Moesgaard Museum</p>
+            <p>Moesgård Allé 15</p>
+            <p>8270 Højbjerg</p>
+            <p>Telefon 87 39 40 00</p>
+            <p>(telefontid man-fre 09-16)</p>
+            <p><a href="mailto:Info@moesgaardmuseum.dk">Info@moesgaardmuseum.dk</a></p>
+
+        </div>
+        <div class="footerSize">
+            <p class="footerTitle">GREEN ATTRACTION</p>
+            <p>Moesgaard Museum </p>
+            <p>er certificeret af </p>
+            <p>GREEN ATTRACTION</p>
+
+        </div>
+
+
+        <div class="footerSize">
+            <div class="social">
+                <a title="Følg os på Facebook" href="https://www.facebook.com/MoesgaardMuseum/" target="_blank"><i
+                        class="fa fa-facebook"></i></a>
+                <a title="Billeder fra Instagram" href="https://www.instagram.com/moesgaardmuseum/" target="_blank"><i
+                        class="fa fa-instagram"></i></a>
+                <a title="Youtube"
+                    href="https://www.youtube.com/channel/UCHDIb824Fpp2OxXD-uVK9hw/videos?view_as=subscriber"><i
+                        class="fa fa-youtube"></i></a>
+                <a title="Følg os på X (Twitter)" href="https://twitter.com/museummoesgaard?lang=da"><i
+                        class="fa fa-twitter"></i></a>
+                <a title="LinkedIn" href="https://dk.linkedin.com/company/moesgaardmuseum"><i
+                        class="fa fa-linkedin"></i></a>
+                <a title="Kontakt" href="mailto:info@moesgaardmuseum.dk"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+            <div class="footerLogo">
+                <a href="/">
+                    <img src="images/Logo.png" alt="Moesgaard Museum logo">
+                </a>
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>

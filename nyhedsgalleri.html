@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moesgaard</title>
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/6978fc69bd.js" crossorigin="anonymous" defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="/images/favicon.svg" type="image/x-icon">
+</head>
+
+<body>
+
+    <header>
+        <div class="pcHead">
+            <div class="headerSize">
+                <a href="index.html" class="headerLogo"><img src="images/Logo.png" alt="Moesgaard Museum logo"></a>
+
+            </div>
+            <div class="headerSize">
+                <nav>
+                    <a href="oplev.html">Oplev</a>
+                    <a href="#">Besøg</a>
+                    <a href="#">Køb</a>
+                </nav>
+            </div>
+
+            <div class="headerSize extraNav">
+                <p>Åben: 10-17</p>
+
+                <div>
+                    <a href="#"><i class="fa-solid fa-globe"></i></a>
+                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <a href="#"><i class="fa-solid fa-bars "></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="phoneHead">
+            <a href="index.html" class="headerLogo"><img src="images/Logo.png" alt="Moesgaard Museum logo"></a>
+            <a href="#" onclick="toggleBurger(event)"><i id="navIcon" class="fa-solid fa-bars "></i></a>
+        </div>
+
+
+        <div id="burgerMenu">
+            <div>
+                <a class="burgerLink" href="oplev.html">oplev</a>
+                <a class="burgerLink" href="">Besøg</a>
+                <a class="burgerLink" href="">køb</a>
+
+                <div class="horizontalLine"></div>
+                <a href="">Erhverv, møder og events</a>
+                <a href="">Forskning og undersøgelser</a>
+                <a href="">Rådgivning for bygherrer</a>
+                <a href="">Job og karriere</a>
+                <a href="">Moesgaards 10-årsjubilæum</a>
+            </div>
+            <div class="BurgerVerticalLine"></div>
+        </div>
+    </header>
+
+    <div class="hero gallery trumpet">
+        <div>
+            <!-- Der skal nok stå noget andet i trumpet  -->
+            <p class="overTitle">Velkommen til</p>
+            <h1>Nyheder</h1>
+        </div>
+    </div>
+
+    <div class="CTAline">
+        <h3>Billetter og årskort</h3>
+        <a href="#" class="buttonFill">Køb her</a>
+    </div>
+
+    <div class="galleryContainer">
+        <!-- Søgefelt -->
+        <input type="text" id="search" placeholder="Søg efter nyheder..." onkeyup="filterImages()">
+
+        <!-- Galleriet -->
+        <div class="newsGallery" id="newsGallery">
+            <!-- Kortene/billederne -->
+            <a href="nyhedsartikel.html">
+                <div class="card tagkonstruktion" data-name="Billede 1 tagkonstruktion boersen børsen">
+                    <div class="overlay">Lorem, ipsum dolor.</div>
+                </div>
+            </a>
+            <div class="card moebelkunst" data-name="Billede 2 egyptisk moebelkunst møbelkusnt egypten ægypten">
+                <div class="overlay">Lorem, ipsum dolor.</div>
+            </div>
+            <div class="card krigerkvinde" data-name="Billede 3 krigerkvinde hedegaard hedegård">
+                <div class="overlay">Lorem, ipsum dolor.</div>
+            </div>
+            <div class="card double-width trine" data-name="Billede 4 trine kellberg">
+                <div class="overlay">Lorem, ipsum dolor.</div>
+            </div>
+            <div class="card madsRavn" data-name="Billede 5 mads ravn ravnespænde">
+                <div class="overlay">Lorem, ipsum dolor.</div>
+            </div>
+            <div class="card rummet" data-name="Billede 6 ravnefil rummet">
+                <div class="overlay">Lorem, ipsum dolor.</div>
+            </div>
+            <div class="card peter" data-name="Billede 7 peter astrup subnordica">
+                <div class="overlay">Lorem, ipsum dolor.</div>
+            </div>
+            <div class="card sfinx" data-name="Billede 8 sfinx alléen luxortemplet anders stoustrup">
+                <div class="overlay">Lorem, ipsum dolor.</div>
+            </div>
+            <div class="card elstedgaard" data-name="Billede 9 elstedgaard soelv sølv">
+                <div class="overlay">Lorem, ipsum dolor.</div>
+            </div>
+            <div class="card double-width vision" data-name="Billede 10 visionskitse bispetorv">
+                <div class="overlay">Lorem, ipsum dolor.</div>
+            </div>
+            <div class="card vision" data-name="Billede 11 placeholder">
+                <div class="overlay">Lorem, ipsum dolor.</div>
+            </div>
+            <div class="card placeholder" data-name="Billede 12 placeholder">
+                <div class="overlay">Lorem, ipsum dolor.</div>
+            </div>
+            <div class="card placeholder" data-name="Billede 13 placeholder">
+                <div class="overlay">Lorem, ipsum dolor.</div>
+            </div>
+            <div class="card placeholder" data-name="Billede 14 placeholder">
+                <div class="overlay">Lorem, ipsum dolor.</div>
+            </div>
+            <div class="card placeholder" data-name="Billede 15 placeholder">
+                <div class="overlay">Lorem, ipsum dolor.</div>
+            </div>
+            <div class="card placeholder" data-name="Billede 16 placeholder">
+                <div class="overlay">Lorem, ipsum dolor.</div>
+            </div>
+            <div class="card placeholder" data-name="Billede 17 placeholder">
+                <div class="overlay">Lorem, ipsum dolor.</div>
+            </div>
+            <div class="card placeholder" data-name="Billede 18 placeholder">
+                <div class="overlay">Lorem, ipsum dolor.</div>
+            </div>
+            <div class="card placeholder" data-name="Billede 18 placeholder">
+                <div class="overlay">Lorem, ipsum dolor.</div>
+            </div>
+            <div class="card placeholder" data-name="Billede 18 placeholder">
+                <div class="overlay">Lorem, ipsum dolor.</div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="CTAline" id="newsletterCTA">
+        <h3>Tilmeld nyhedsbrev</h3>
+        <div id="newsletterContent">
+            <div id="newsletterinput">
+                <input type="email" name="email" id="email" placeholder="Indtast E-mail" />
+            </div>
+            <a href="#" class="buttonFill" onclick="openNewsletter(event)">Tilmeld</a>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="footerSize">
+            <p class="footerTitle">Moesgaard Museum</p>
+            <p>Moesgård Allé 15</p>
+            <p>8270 Højbjerg</p>
+            <p>Telefon 87 39 40 00</p>
+            <p>(telefontid man-fre 09-16)</p>
+            <p><a href="mailto:Info@moesgaardmuseum.dk">Info@moesgaardmuseum.dk</a></p>
+
+        </div>
+        <div class="footerSize">
+            <p class="footerTitle">GREEN ATTRACTION</p>
+            <p>Moesgaard Museum </p>
+            <p>er certificeret af </p>
+            <p>GREEN ATTRACTION</p>
+
+        </div>
+
+
+        <div class="footerSize">
+            <div class="social">
+                <a title="Følg os på Facebook" href="https://www.facebook.com/MoesgaardMuseum/" target="_blank"><i
+                        class="fa fa-facebook"></i></a>
+                <a title="Billeder fra Instagram" href="https://www.instagram.com/moesgaardmuseum/" target="_blank"><i
+                        class="fa fa-instagram"></i></a>
+                <a title="Youtube"
+                    href="https://www.youtube.com/channel/UCHDIb824Fpp2OxXD-uVK9hw/videos?view_as=subscriber"><i
+                        class="fa fa-youtube"></i></a>
+                <a title="Følg os på X (Twitter)" href="https://twitter.com/museummoesgaard?lang=da"><i
+                        class="fa fa-twitter"></i></a>
+                <a title="LinkedIn" href="https://dk.linkedin.com/company/moesgaardmuseum"><i
+                        class="fa fa-linkedin"></i></a>
+                <a title="Kontakt" href="mailto:info@moesgaardmuseum.dk"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+            <div class="footerLogo">
+                <a href="/">
+                    <img src="images/Logo.png" alt="Moesgaard Museum logo">
+                </a>
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>
